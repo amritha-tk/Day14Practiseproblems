@@ -8,7 +8,7 @@ echo $length
 
 if [[ $length -ge 8 ]]
 then
-       regex="^[A-Z]{1}[a-z0-9]*[^a-zA-Z0-9]{1}[a-zA-Z0-9]*$"
+       regex="^[A-Za-z0-9]*[^a-zA-Z0-9]{1}[a-zA-Z0-9]*$"
        if [[ $password =~ $regex ]]
        then
           echo "Valid"
